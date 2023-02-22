@@ -1,11 +1,11 @@
 const app = require('express')();
 
 /**
- * Problem Statement: Given list of items in array find largest string in array
+ * Problem Statement: Given list of items in array find Longest string in array
  * Input: List of Elements
- * Output: Largest string
+ * Output: Longest string
  */
-var getLargestString = (req, res) => {
+var getLongestString = (req, res) => {
   let input = [
       'fan',
       'table',
@@ -15,7 +15,7 @@ var getLargestString = (req, res) => {
       'computer',
       'table',
     ],
-    output = 'Display Largest string in Array';
+    output = 'Display Longest string in Array';
 
   /** Write down your code here */
 
@@ -24,7 +24,7 @@ var getLargestString = (req, res) => {
   res.send('<h3>' + output + '</h3>');
 };
 
-app.get('/', getLargestString);
+app.get('/', getLongestString);
 
 app.listen(3000, () => {
   console.log('Started listening');
