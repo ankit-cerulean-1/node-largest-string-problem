@@ -6,15 +6,7 @@ const app = require('express')();
  * Output: Longest string
  */
 var getLongestString = (req, res) => {
-  let input = [
-      'fan',
-      'table',
-      'computer',
-      'books',
-      'table',
-      'computer',
-      'table',
-    ],
+  let input = ['fan', 'table', 'books', 'computer', 'table'],
     output = 'Display Longest string in Array';
 
   /** Write down your code here */
